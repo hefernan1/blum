@@ -15,7 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   right: 0;

@@ -142,7 +142,7 @@ function Swipe() {
               <div className="card-header">
                 <div>
                   <h2>Sophie <span className="age">28</span></h2>
-                  <p className="location">📍 À 2 km</p>
+                  <p className="location">📍 2 km away</p>
                 </div>
                 <button className="info-button" onClick={handleShowProfile}>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -160,12 +160,12 @@ function Swipe() {
               </div>
 
               <div className="activity-pref">
-                <div className="activity-label">Activité préférée</div>
+                <div className="activity-label">Favorite activity</div>
                 <div className="activity-highlight">
                   <span className="activity-icon">🧗‍♀️</span>
-                  <span className="activity-name">Escalade en salle</span>
+                  <span className="activity-name">Indoor climbing</span>
                 </div>
-                <p className="activity-description">J'adore grimper ! C'est ma passion depuis 3 ans. Toujours partante pour découvrir de nouvelles salles 🔥</p>
+                <p className="activity-description">I love climbing! It's been my passion for 3 years. Always up for discovering new climbing gyms 🔥</p>
               </div>
             </div>
           </div>

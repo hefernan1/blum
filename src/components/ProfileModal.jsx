@@ -10,41 +10,40 @@ function ProfileModal({ onClose }) {
         <div className="profile-modal-header">
           <img src="/femme.webp" alt="Sophie" className="profile-modal-image" />
           <div className="profile-modal-info">
-            <h2>Sophie, 28 ans</h2>
-            <p className="profile-modal-location">📍 À 2 km • Paris 11ème</p>
+            <h2>Sophie, 28</h2>
+            <p className="profile-modal-location">📍 2 km away • Paris 11th</p>
           </div>
         </div>
 
         <div className="profile-modal-body">
           <div className="profile-section">
-            <h3 className="section-title">À propos de moi</h3>
+            <h3 className="section-title">About me</h3>
             <p className="profile-bio">
-              Passionnée de sport et d'aventure ! J'aime découvrir de nouvelles activités et 
-              rencontrer des gens qui partagent les mêmes centres d'intérêt. Toujours partante 
-              pour une nouvelle expérience ! 🌟
+              Passionate about sports and adventure! I love discovering new activities and 
+              meeting people who share the same interests. Always up for a new experience! 🌟
             </p>
           </div>
 
           <div className="profile-section">
-            <h3 className="section-title">Mes activités favorites</h3>
+            <h3 className="section-title">My favorite activities</h3>
             <div className="activities-grid">
               <div className="activity-card featured">
                 <span className="activity-emoji">🧗‍♀️</span>
                 <div className="activity-info">
-                  <h4>Escalade en salle</h4>
-                  <p className="activity-level">Niveau intermédiaire</p>
-                  <p className="activity-desc">Ma passion depuis 3 ans ! J'adore la sensation de grimper et me dépasser.</p>
-                  <span className="frequency-badge">2-3x par semaine</span>
+                  <h4>Indoor climbing</h4>
+                  <p className="activity-level">Intermediate level</p>
+                  <p className="activity-desc">My passion for 3 years! I love the feeling of climbing and pushing myself.</p>
+                  <span className="frequency-badge">2-3x per week</span>
                 </div>
               </div>
 
               <div className="activity-card">
                 <span className="activity-emoji">🏃‍♀️</span>
                 <div className="activity-info">
-                  <h4>Course à pied</h4>
-                  <p className="activity-level">Confirmé</p>
-                  <p className="activity-desc">J'adore courir le long du canal Saint-Martin le matin.</p>
-                  <span className="frequency-badge">4x par semaine</span>
+                  <h4>Running</h4>
+                  <p className="activity-level">Advanced</p>
+                  <p className="activity-desc">I love running along the Canal Saint-Martin in the morning.</p>
+                  <span className="frequency-badge">4x per week</span>
                 </div>
               </div>
 
@@ -52,9 +51,9 @@ function ProfileModal({ onClose }) {
                 <span className="activity-emoji">🧘‍♀️</span>
                 <div className="activity-info">
                   <h4>Yoga</h4>
-                  <p className="activity-level">Débutant</p>
-                  <p className="activity-desc">Pour me détendre et travailler ma souplesse.</p>
-                  <span className="frequency-badge">1x par semaine</span>
+                  <p className="activity-level">Beginner</p>
+                  <p className="activity-desc">To relax and work on my flexibility.</p>
+                  <span className="frequency-badge">1x per week</span>
                 </div>
               </div>
 
@@ -62,16 +61,16 @@ function ProfileModal({ onClose }) {
                 <span className="activity-emoji">🔐</span>
                 <div className="activity-info">
                   <h4>Escape game</h4>
-                  <p className="activity-level">Passionnée</p>
-                  <p className="activity-desc">J'adore les énigmes et l'ambiance entre amis !</p>
-                  <span className="frequency-badge">2x par mois</span>
+                  <p className="activity-level">Passionate</p>
+                  <p className="activity-desc">I love puzzles and the atmosphere with friends!</p>
+                  <span className="frequency-badge">2x per month</span>
                 </div>
               </div>
             </div>
           </div>
 
           <div className="profile-section">
-            <h3 className="section-title">Activités à essayer</h3>
+            <h3 className="section-title">Activities to try</h3>
             <div className="wishlist-activities">
               <span className="wishlist-tag">🎿 Ski</span>
               <span className="wishlist-tag">🏄‍♀️ Surf</span>
@@ -81,11 +80,11 @@ function ProfileModal({ onClose }) {
           </div>
 
           <div className="profile-section">
-            <h3 className="section-title">Style de rencontre</h3>
+            <h3 className="section-title">Meeting style</h3>
             <div className="preferences-tags">
-              <span className="pref-tag">☕ Café avant activité</span>
-              <span className="pref-tag">🌞 Préfère le jour</span>
-              <span className="pref-tag">👥 Groupe ou duo</span>
+              <span className="pref-tag">☕ Coffee before activity</span>
+              <span className="pref-tag">🌞 Prefers daytime</span>
+              <span className="pref-tag">👥 Group or duo</span>
             </div>
           </div>
         </div>

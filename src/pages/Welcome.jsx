@@ -14,7 +14,7 @@ function Welcome() {
         <div className="logo-container">
           <img src="/logo.png" alt="Blum Logo" className="welcome-logo" />
           <button className="cta-button" onClick={handleStart}>
-            Commencer l'aventure
+            Your adventure starts here !
           </button>
         </div>
       </div>

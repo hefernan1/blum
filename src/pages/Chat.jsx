@@ -18,11 +18,11 @@ function Chat() {
   useEffect(() => {
     // Auto-generate conversation
     const conversation = [
-      { type: 'received', text: 'Hey ! Super qu\'on se soit matché ! 😊', time: '14:23', delay: 500 },
-      { type: 'sent', text: 'Salut Sophie ! Oui j\'ai vu qu\'on aimait tous les deux l\'escalade 🧗‍♀️', time: '14:24', delay: 1500 },
-      { type: 'received', text: 'Carrément ! Ça fait longtemps que tu grimpes ?', time: '14:25', delay: 2500 },
-      { type: 'sent', text: 'Quelques années, mais je suis un peu rouillé 😅', time: '14:26', delay: 3500 },
-      { type: 'received', text: 'Aha moi aussi ! On confirme sur Blum ?', time: '14:27', delay: 4500 },
+      { type: 'received', text: 'Hey! So glad we matched! 😊', time: '14:23', delay: 500 },
+      { type: 'sent', text: 'Hi Sophie! Yeah I saw we both love climbing 🧗‍♀️', time: '14:24', delay: 1500 },
+      { type: 'received', text: 'Totally! How long have you been climbing?', time: '14:25', delay: 2500 },
+      { type: 'sent', text: 'A few years, but I\'m a bit rusty 😅', time: '14:26', delay: 3500 },
+      { type: 'received', text: 'Same here! Shall we confirm on Blum?', time: '14:27', delay: 4500 },
       { type: 'sent', text: 'Lets go 🎉', time: '14:28', delay: 5500 },
     ];
 
@@ -68,7 +68,7 @@ function Chat() {
     setTimeout(() => {
       setMessages((prev) => [...prev, {
         type: 'sent',
-        text: 'Super ! J\'ai hâte ! 🎉',
+        text: 'Awesome! Can\'t wait! 🎉',
         time: '14:29'
       }]);
     }, 300);
@@ -76,7 +76,7 @@ function Chat() {
     setTimeout(() => {
       setMessages((prev) => [...prev, {
         type: 'received',
-        text: 'Génial ! À samedi alors ! 😊',
+        text: 'Great! See you Saturday then! 😊',
         time: '14:29'
       }]);
     }, 1300);
@@ -94,7 +94,7 @@ function Chat() {
           <img src="/femme.webp" alt="Profile" className="profile-pic" />
           <div className="profile-details">
             <h2>Sophie</h2>
-            <span className="online-status">En ligne</span>
+            <span className="online-status">Online</span>
           </div>
         </div>
         <button className="menu-button">
@@ -110,12 +110,12 @@ function Chat() {
         <div className="match-notification">
           <div className="match-banner">
             <div className="match-hearts">💕</div>
-            <h3>Vous avez matché sur l'escalade 🧗‍♀️</h3>
-            <p>Blum vous propose une rencontre !</p>
+            <h3>You matched on climbing 🧗‍♀️</h3>
+            <p>Blum suggests a meeting!</p>
           </div>
         </div>
 
-        <div className="date-separator">Aujourd'hui</div>
+        <div className="date-separator">Today</div>
 
         {messages.map((msg, index) => (
           <div key={index} className={`message ${msg.type}`}>
@@ -132,36 +132,36 @@ function Chat() {
         {showActivityProposal && (
           <div className="activity-proposal-card">
             <div className="proposal-header">
-              <span className="blum-badge">🌸 Blum vous propose</span>
+              <span className="blum-badge">🌸 Blum suggests</span>
             </div>
             <div className="proposal-activity">
               <div className="proposal-icon">🧗‍♀️</div>
-              <h3>Session d'escalade en salle</h3>
+              <h3>Indoor climbing session</h3>
             </div>
             <div className="proposal-details">
               <div className="proposal-item">
                 <span className="proposal-emoji">📍</span>
-                <span>Vertical'Art Pigalle, Paris 9ème</span>
+                <span>Vertical'Art Pigalle, Paris 9th</span>
               </div>
               <div className="proposal-item">
                 <span className="proposal-emoji">📅</span>
-                <span>Samedi 5 octobre 2025</span>
+                <span>Saturday October 5, 2025</span>
               </div>
               <div className="proposal-item">
                 <span className="proposal-emoji">⏰</span>
-                <span>15h00 - 17h00</span>
+                <span>3:00 PM - 5:00 PM</span>
               </div>
               <div className="proposal-item">
                 <span className="proposal-emoji">😎</span>
-                <span>-15% grâce à Blum sur cette activité !</span>
+                <span>-15% thanks to Blum on this activity!</span>
               </div>
             </div>
             <div className="proposal-message">
-              <p>💡 Une session relax pour apprendre à se connaître autour de votre passion commune !</p>
+              <p>💡 A relaxed session to get to know each other around your shared passion!</p>
             </div>
             <div className="proposal-actions">
-              <button className="btn-proposal-decline" onClick={handleCloseProposal}>Plus tard</button>
-              <button className="btn-proposal-accept" onClick={handleAcceptActivity}>Ça me dit ! 🎉</button>
+              <button className="btn-proposal-decline" onClick={handleCloseProposal}>Later</button>
+              <button className="btn-proposal-accept" onClick={handleAcceptActivity}>I'm in! 🎉</button>
             </div>
           </div>
         )}
