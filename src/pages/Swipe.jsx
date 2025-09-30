@@ -46,7 +46,7 @@ function Swipe() {
     setDragCurrent({ x: 500, y: 0 });
     setTimeout(() => {
       setShowMatch(true);
-    }, 300);
+    }, 50);
   };
 
   const handleSwipeLeft = () => {
