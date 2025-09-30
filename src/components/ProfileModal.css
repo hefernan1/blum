@@ -1,0 +1,297 @@
+.profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  animation: fadeIn 0.3s ease;
+}
+
+.profile-modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+}
+
+.profile-modal-content {
+  position: relative;
+  background: white;
+  width: 100%;
+  max-width: 450px;
+  max-height: 85vh;
+  border-radius: 24px 24px 0 0;
+  overflow-y: auto;
+  animation: slideUpModal 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.profile-modal-close {
+  position: sticky;
+  top: 16px;
+  right: 16px;
+  float: right;
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 28px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: all 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.profile-modal-close:hover {
+  background: #f5f5f5;
+  transform: rotate(90deg);
+}
+
+.profile-modal-header {
+  position: relative;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.profile-modal-image {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-modal-info {
+  padding: 20px 24px 10px;
+  background: linear-gradient(to top, white, rgba(255, 255, 255, 0.95));
+  margin-top: -50px;
+  position: relative;
+  border-radius: 24px 24px 0 0;
+}
+
+.profile-modal-info h2 {
+  font-size: 28px;
+  color: #333;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.profile-modal-location {
+  color: #666;
+  font-size: 15px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-modal-body {
+  padding: 0 24px 24px;
+}
+
+.profile-section {
+  margin-bottom: 30px;
+}
+
+.section-title {
+  font-size: 18px;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-bio {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.activities-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.activity-card {
+  background: #f8f9fa;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  gap: 16px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.activity-card.featured {
+  background: linear-gradient(135deg, #fff4f0, #ffe8dc);
+  border: 2px solid #FF8C42;
+}
+
+.activity-emoji {
+  font-size: 48px;
+  flex-shrink: 0;
+}
+
+.activity-info {
+  flex: 1;
+}
+
+.activity-info h4 {
+  font-size: 17px;
+  color: #333;
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.activity-level {
+  font-size: 13px;
+  color: #FF8C42;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.activity-desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+  margin: 0 0 12px 0;
+}
+
+.frequency-badge {
+  display: inline-block;
+  background: white;
+  color: #FF8C42;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 20px;
+  border: 1px solid #FFD699;
+}
+
+.wishlist-activities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.wishlist-tag {
+  background: #f0f0f0;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #666;
+  border: 2px dashed #ddd;
+  transition: all 0.2s;
+}
+
+.wishlist-tag:hover {
+  background: #e8e8e8;
+  border-color: #FF8C42;
+  color: #FF8C42;
+}
+
+.preferences-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pref-tag {
+  background: linear-gradient(135deg, #fff4f0, #ffe8dc);
+  color: #FF8C42;
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #FFD699;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpModal {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Scrollbar styling for modal */
+.profile-modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.profile-modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.profile-modal-content::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 3px;
+}
+
+.profile-modal-content::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+@media (max-width: 768px) {
+  .profile-modal-content {
+    max-width: 100%;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .profile-modal-image {
+    height: 300px;
+  }
+
+  .activity-card {
+    padding: 16px;
+  }
+
+  .activity-emoji {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .profile-modal {
+    align-items: center;
+  }
+
+  .profile-modal-content {
+    border-radius: 24px;
+    max-height: 90vh;
+  }
+}
